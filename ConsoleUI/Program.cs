@@ -55,6 +55,18 @@ namespace ConsoleUI
                 Make = "Honda",
                 Model = "Speed Bike",
             };
+            Vehicle car2 = new Car()
+            {
+                Year = 2020,
+                Make = "Nissan",
+                Model = "Altima",
+            };
+            Vehicle bike2 = new Motorcycle()
+            {
+                Year = 2003,
+                Make = "Honda",
+                Model = "Slow Bike",
+            };
 
             /*
             * Add the 4 vehicles to the list
@@ -63,6 +75,8 @@ namespace ConsoleUI
 
             vehicleList.Add(bike);
             vehicleList.Add(car);
+            vehicleList.Add(bike2);
+            vehicleList.Add(car2);
 
             foreach (var automobile in vehicleList)
             {
@@ -76,8 +90,14 @@ namespace ConsoleUI
             bike.DriveAbstract();
             bike.DriveVirtual();
 
+            bike2.DriveAbstract();
+            bike2.DriveVirtual();
+
             car.DriveAbstract();
             car.DriveVirtual();
+
+            car2.DriveAbstract();
+            car2.DriveVirtual();
 
             #endregion
             Console.ReadLine();
