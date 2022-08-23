@@ -80,9 +80,9 @@ namespace ConsoleUI
 
             foreach (var automobile in vehicleList)
             {
-                Console.WriteLine(automobile.Year);
-                Console.WriteLine(automobile.Make);
-                Console.WriteLine(automobile.Model);
+                Console.WriteLine($"Year: {automobile.Year}");
+                Console.WriteLine($"Make: {automobile.Make}");
+                Console.WriteLine($"Model: {automobile.Model}");
             }
 
             // Call each of the drive methods for one car and one motorcycle
